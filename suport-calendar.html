@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">  
+  <head>
+    <meta charset="utf-8" />
+    <title>Datalogos</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--Imagens-->
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <!--Plugins-->
+    <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+    <link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <!--CSS-->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/icons.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" /> 
+    <link href="/assets/css/suport-calendar.css" rel="stylesheet" type="text/css" />   
+  </head>
+  <body class="fixed-top">
+    <!--Imagem de Carregamento-->
+    <div id="pageloader">   
+      <div class="loader"></div>
+    </div>
+    <link rel="import" href="header.html">
+    <div class="wrapper">
+      <div class="content-main container">   
+        <!--Titulo da Pagina-->
+        <div class="page-title-box">
+          <h4 class="page-title" id="pagge_title"><i class="fi fi-br-calendar"></i><b> Agenda do Suporte</b></h4>
+          <div class="clearfix"></div>
+        </div>
+        <div>
+          <div class="row">
+            <div class="col-md-20"> 
+              <div class="p-0 m-b-30">
+                <div class="vertical-tabs-main">
+                  <ul class="nav nav-tabs vertical-tabs" >
+                    <li class="active tab">
+                      <a href="#agenda" data-toggle="tab" aria-expanded="false" class="aba"> 
+                        <span class="visible-xs"><i class="fa fa-home"></i></span> 
+                        <span class="hidden-xs">Escala de Plantão</span> 
+                      </a> 
+                    </li> 
+                    <li class="tab"> 
+                      <a href="#escala" data-toggle="tab" aria-expanded="false" class="aba"> 
+                        <span class="visible-xs"><i class="fa fa-user"></i></span> 
+                        <span class="hidden-xs">Escala de Férias</span> 
+                      </a> 
+                    </li>
+                  </ul>
+                  <div class="tab-content">
+                    <div class="tab-pane active" id="agenda">
+                      <div class="col-md-12">
+                        <div class="white-box">
+                          <h2 class="header-title"> Escala</h2>
+                            <div class="table-responsive">
+                              <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Pesquisar Suporte" style="margin-left: 10px; margin-bottom: 10px">
+                              <table id="table" href="javascript:void(0)"class="table table-bordered"><span class="menu-label"></span>
+                                <thead>
+                                  <tr>
+                                    <th>#</th>
+                                    <th>Suporte</th>
+                                    <th>Data</th>
+                                    <th>Troca de Plantão</th>
+                                    <th>Data que foi trocado</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>1</td>
+                                    <td>Davi</td>
+                                    <td>08/07/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>2</td>
+                                    <td>Eduardo</td>
+                                    <td>15/07/2023</td>
+                                    <td>Guilherme</td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>3</td>
+                                    <td>Guilherme</td>
+                                    <td>22/07/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>4</td>
+                                    <td>Andersom</td>
+                                    <td>29/07/2023</td>
+                                    <td></td>
+                                    <td>17/06/2023</td>
+                                  </tr>
+                                  <tr>
+                                    <td>5</td>
+                                    <td>Eduardo</td>
+                                    <td>05/08/2023</td>
+                                    <td></td>
+                                    <td>15/07/2023</td>
+                                  </tr>
+                                  <tr>
+                                    <td>6</td>
+                                    <td>João Gabriel</td>
+                                    <td>12/08/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>7</td>
+                                    <td>Jonas</td>
+                                    <td>19/08/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>8</td>
+                                    <td>Jonnathan</td>
+                                    <td>26/08/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>9</td>
+                                    <td>Laercio</td>
+                                    <td>02/09/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>10</td>
+                                    <td>Lucas</td>
+                                    <td>09/09/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>11</td>
+                                    <td>Neri</td>
+                                    <td>16/09/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>12</td>
+                                    <td>Samuel</td>
+                                    <td>23/09/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>13</td>
+                                    <td>Willian Cordeiro</td>
+                                    <td>30/09/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>14</td>
+                                    <td>Andersom</td>
+                                    <td>07/10/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>15</td>
+                                    <td>André</td>
+                                    <td>14/10/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>16</td>
+                                    <td>Christian</td>
+                                    <td>21/10/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>17</td>
+                                    <td>Eduardo</td>
+                                    <td>28/10/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>18</td>
+                                    <td>Guilherme</td>
+                                    <td>04/11/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>19</td>
+                                    <td>João Gabriel</td>
+                                    <td>11/11/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>20</td>
+                                    <td>Jonas</td>
+                                    <td>18/11/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>21</td>
+                                    <td>Jonnathan</td>
+                                    <td>25/11/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>22</td>
+                                    <td>Laercio</td>
+                                    <td>02/12/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>23</td>
+                                    <td>Lucas</td>
+                                    <td>09/12/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>24</td>
+                                    <td>Neri</td>
+                                    <td>16/12/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>25</td>
+                                    <td>Samuel</td>
+                                    <td>23/12/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                  <tr>
+                                    <td>26</td>
+                                    <td>Willian Cordeiro</td>
+                                    <td>30/12/2023</td>
+                                    <td></td>
+                                    <td></td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="tab-pane active" id="escala">
+                        
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>                  
+    <!--Start  Footer -->
+    <footer class="footer-main"> 2023 &copy; Datalogos </footer>   
+    <!--End footer -->   
+    <!--JS-->
+    <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+    <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+    <script type="text/javascript" src="/assets/js/suport_calendar.js"></script>
+    <!--Importações
+    <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/core@3.3.1/main.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/daygrid@3.3.1/main.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/timegrid@3.3.1/main.min.js"></script>
+	  <script src="https://cdn.jsdelivr.net/npm/@fullcalendar/interaction@3.3.1/main.min.js"></script>
+	  <script src="https://apis.google.com/js/api.js"></script>-->
+    <!--Plugins-->
+    <script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+    <script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+    <script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+    <script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+    <script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+    <script type="text/javascript" src="/assets/plugins/nestable/jquery.nestable.js"></script>
+    <!--Pages-->
+    <script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+    <script type="text/javascript" src="/assets/pages/nestable-custom.js"></script>
+  </body>
+  <!-- Mirrored from mixpixeltheme.com/mercy/table-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 14:06:05 GMT -->
+</html>

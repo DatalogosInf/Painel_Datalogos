@@ -1,0 +1,541 @@
+    <!DOCTYPE html>
+<html lang="pt-br">  
+    <head>
+        <meta charset="utf-8" />
+        <title>Datalogos</title>
+        <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+        <!--Imagens-->
+        <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+        <!--Plugins-->
+        <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+        <link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+        <!--CSS-->
+        <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/icons.css" rel="stylesheet">
+        <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+        <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" /> 
+        <link href="/assets/css/suporte.css" rel="stylesheet" type="text/css" />   
+    </head>
+    <body class="fixed-top">
+        <!--Imagem de Carregamento-->
+        <div id="pageloader">   
+            <div class="loader"></div>
+        </div>
+        <link rel="import" href="header.html">
+        <div class="wrapper">
+            <div class="content-main container">   
+            <!--Titulo do Pagina-->
+            <div class="page-title-box">
+                <h4 class="page-title" id="pagge_title"><i class= "fi fi-rs-settings"></i><b> Regras do Suporte</b></h4>
+                <div class="clearfix"></div>
+            </div>
+            <!--Abas de Conteudo-->
+            <div>        
+                <div class="row">
+                    <div class="col-md-20"> 
+                        <div class="p-0 m-b-30">
+                            <div class="vertical-tabs-main">
+                                <ul class="nav nav-tabs vertical-tabs" >
+                                    <li class="active tab">
+                                        <a href="#divisao" data-toggle="tab" aria-expanded="false" class="aba"> 
+                                            <span class="visible-xs"><i class="fa fa-home"></i></span> 
+                                            <span class="hidden-xs">Divisão de Chamados</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#padrao" data-toggle="tab" aria-expanded="false" class="aba"> 
+                                            <span class="visible-xs"><i class="fa fa-user"></i></span> 
+                                            <span class="hidden-xs">Ordem de Atendimento</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#base" data-toggle="tab" aria-expanded="true" class="aba"> 
+                                            <span class="visible-xs"><i class="fa fa-envelope-o"></i></span> 
+                                            <span class="hidden-xs">Base de Conhecimento</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#fluxo" data-toggle="tab" aria-expanded="false" class="aba"> 
+                                            <span class="visible-xs"><i class="fa fa-cog"></i></span> 
+                                            <span class="hidden-xs">Fluxo de Trabalho</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#atendimento" data-toggle="tab" aria-expanded="false" class="aba"> 
+                                            <span class="visible-xs"><i class="fa fa-cog"></i></span> 
+                                            <span class="hidden-xs">Padrão Atendimento</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#processo" data-toggle="tab" aria-expanded="false" class="aba"> 
+                                            <span class="visible-xs"><i class="fa fa-cog"></i></span> 
+                                            <span class="hidden-xs">Processo de Atendimento</span> 
+                                        </a> 
+                                    </li> 
+                                    <li class="tab"> 
+                                        <a href="#listagem" data-toggle="tab" aria-expanded="false" class="aba"> 
+                                            <span class="visible-xs"><i class="fa fa-cog"></i></span> 
+                                            <span class="hidden-xs">Listagem dos Status</span> 
+                                        </a> 
+                                    </li> 
+                                </ul> 
+                                <!--Divisão de Chamados-->
+                                <div class="tab-content"> 
+                	               <div class="tab-pane active" id="divisao"> 
+                                        <p class="text" id="text">A listagem estará dividida por prioridade primeiramente, e ao lado de cada usuário estará as definições de atendimento prioritárias do mesmo.<br><b>Lembrando que atendimentos de erro de documentos eletrónicos (NF-e, Ct-e, MDF-e, etc) tem como responsabilidade de todos realizarem atendimento.</b></p> 
+                                        <div class="panel panel-default">
+                        	                <div class="panel-heading">
+                        		                <h5 class="panel-tittle">
+                        			                <a href="#collapse1" data-toggle="collapse" data-parent="#accordion" class="name_table" id="title">Coordenadores</a>
+                        		                </h5>
+                        	                </div>
+                        	                <div id="collapse1" class="panel-collapse collapse in">
+                        		                <div class="table-responsive" class="panel-body">
+                        			                <table href="javascript:void(0)" class="table table-bordered"><span class="menu-label"></span>
+                        				    <thead>
+                        				    	<tr>
+                        				    		<th style="width: 20%">Usuario</th>
+                        				    		<th>Prioridade Atend.</th>
+                        				    	</tr>
+                        				    </thead>
+                        				    <tbody>
+                        				    	<tr>
+                        				    		<td>Eliane</td>
+                        				    		<td></td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Marcio</td>
+                        				    		<td></td>
+                        				    	</tr>
+                        				    </tbody>
+                        			    </table>
+                        		    </div>
+                        	    </div>
+                            </div>
+                            <div class="panel panel-default">
+                        	   <div class="panel-heading">
+                        		    <h5 class="panel-tittle">
+                        			    <a href="#collapse2" data-toggle="collapse" data-parent="#accordion" class="name_table" id="title">Suporte Prioridade 1</a>
+                        		    </h5>
+                        	    </div>
+                        	    <div id="collapse2" class="panel-collapse collapse in">
+                        		    <div class="table-responsive" class="panel-body">
+                        			    <table href="javascript:void(0)" class="table table-bordered"><span class="menu-label"></span>
+                        				    <thead>
+                        				    	<tr>
+                        				    		<th style="width: 20%">Usuario</th>
+                        				    		<th>Prioridade Atend.</th>
+                        				    	</tr>
+                        				    </thead>
+                        				    <tbody>
+                        				    	<tr>
+                        				    		<td>Davi</td>
+                        				    		<td>Situação Fiscal / Notas Devolução, Complementar e Ajuste</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Enrique</td>
+                        				    		<td>Instalação / Erros em geral (Release/Relatório/Acesso/Servidor de Notas)</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Gustavo</td>
+                        				    		<td>Ambiente Cloud</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>João Gabriel</td>
+                        				    		<td>Apps Web (Vendor/XML - Center/E-commerce/etc)</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Jonas</td>
+                        				    		<td>Erros em geral / Apps Web (Vendor/XML - Center/E-commerce/etc)</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Laercio</td>
+                        				    		<td>Atualizações de versão e release</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Lucas Gafke</td>
+                        				    		<td>Situação Fiscal / Notas Devolução, Complementar e Ajuste</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Samuel</td>
+                        				    		<td>Contabil / Fiscal</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Willian Cordeiro</td>
+                        				    		<td>Instalação / Erros em geral (Release/Relatório/Acesso/Servidor de Notas)</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Willian Neri</td>
+                        				    		<td>Auditor</td>
+                        				    	</tr>
+                        				    </tbody>
+                        			    </table>
+                        		    </div>
+                        	    </div>
+                            </div>
+                            <div class="panel panel-default">
+                        	    <div class="panel-heading">
+                        		    <h5 class="panel-tittle">
+                        		    	<a href="#collapse3" data-toggle="collapse" data-parent="#accordion" class="name_table" id="title">Suporte Prioridade 2</a>
+                        		    </h5>
+                        	    </div>
+                        	    <div id="collapse3" class="panel-collapse collapse in">
+                        		    <div class="table-responsive" class="panel-body">
+                        			    <table href="javascript:void(0)" class="table table-bordered"><span class="menu-label"></span>
+                        				    <thead>
+                        				    	<tr>
+                        				    		<th style="width: 20%">Usuario</th>
+                        				    		<th>Prioridade Atend.</th>
+                        				    	</tr>
+                        				    </thead>
+                        				    <tbody>
+                        				    	<tr>
+                        				    		<td>Andre</td>
+                        				    		<td>Chamados com complexidade maior</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Christian</td>
+                        				    		<td>Financeiro / Chamados com complexidade maior</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Eduardo</td>
+                        				    		<td>Contabil / Fiscal / Implantação</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Guilherme</td>
+                        				    		<td>Chamados com complexidade maior</td>
+                        				    	</tr>
+                        				    	<tr>
+                        				    		<td>Jose Luiz</td>
+                        				    		<td>Gestão Pessoal / Implantação</td>
+                        				    	</tr>
+                        				    </tbody>
+                        			    </table>
+                        		    </div>
+                        	    </div>
+                            </div>
+                            <div class="panel panel-default">
+                        	    <div class="panel-heading">
+                        		  <h5 class="panel-tittle">
+                        		  	<a href="#collapse4" data-toggle="collapse" data-parent="#accordion" class="name_table" id="title">Implantação</a>
+                        		  </h5>
+                        	    </div>
+                        	    <div id="collapse4" class="panel-collapse collapse in">
+                        		    <div class="table-responsive" class="panel-body">
+                        			    <table href="javascript:void(0)" class="table table-bordered"><span class="menu-label"></span>
+                        			    	<thead>
+                        			    		<tr>
+                        			    			<th style="width: 20%">Usuario</th>
+                        			    			<th>Prioridade Atend.</th>
+                        			    		</tr>
+                        			    	</thead>
+                        			    	<tbody>
+                        			    		<tr>
+                        			    			<td>Alesson</td>
+                        			    			<td></td>
+                        			    		</tr>
+                        			    		<tr>
+                        			    			<td>Anderson</td>
+                        			    			<td></td>
+                        			    		</tr>
+                        			    		<tr>
+                        			    			<td>Jonnathan</td>
+                        			    			<td></td>
+                        			    		</tr>
+                        			    		<tr>
+                        			    			<td>Paulo</td>
+                        			    			<td></td>
+                        			    		</tr>
+                        			    	</tbody>
+                        			    </table>
+                        		    </div>
+                        	    </div>
+                            </div>
+                        </div> 
+                        <!--Padrão de Atendimento-->
+                        <div class="tab-pane" id="padrao">
+                    	    <p class="text" id="text">A prioridade dos chamados deve seguir a seguinte ordem:</p>
+                            <p class="text" id="text"><b>1º Chamadas urgentes -</b> Neste primeiro caso devem ser levados em consideração dois casos, documentos eletrónicos e chamados que impactam no processo do cliente. Tempo de resposta máximo: 30 Minutos</p> 
+                            <p class="text" id="text"><b>2º Chamadas por ordem de abertura - </b> Atender chamados conforme a abertura do mesmo, levando em consideração a data de abertura e em seguida a hora de abertura.Tempo de resposta máximo: 60 Minutos</p>
+                            <p class="text" id="text"><b>3º Chamadas de analise -</b> Chamadas que demandam tempo de analise do problema onde levará mais tempo para ser solucionado.</p>
+                        </div>   
+                        <!--Base de Conhecimento-->
+                        <div class="tab-pane" id="base">
+                            <p class="text" id="text">A base de conhecimento, também sugerida pela ITIL, é uma ferramenta que, se bem utilizada, pode reduzir ainda mais o tempo de atendimento do Help Desk. Ela consiste no conjunto de informações referentes a erros conhecidos e suas soluções que ficam registradas de forma que todos os atendentes podem efetuar buscas nessa base quando encontrarem problemas cujas soluções, ou soluções de contorno temporárias, eles não conhecem. </p> 
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text"><i></i><b>Teorema Assetway -</b> Ambiente onde contém manuais dos processos do sistema.</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text"><b>FAQ’s -</b> Neste fica informado soluções especificas para problemas que ocorrem ocasionalmente.</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text"><b>Chamados anteriores do cliente -</b> Sempre deve estar informado o processo feito e alterado no chamado.</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text"><b>Processos do Cliente -</b> Ficam detalhados processos utilizados no cliente, como acessos externos, bancos homologados,etc.</p>
+                        </div>  
+                        <!--Fluxo de Trabalho-->
+                        <div class="tab-pane" id="fluxo">
+                            <p class="title" id="title"><b>Horário de Trabalho</b></p>  
+						    <p class="mdi mdi-arrow-right-bold-circle" id="text">Segunda a Sexta das 8:00 às 12:00 das 13:30 às 18:00 </p>
+						    <p class="mdi mdi-arrow-right-bold-circle" id="text">Aos Sábados ocorre escala de plantão</p>
+						    <p class="title" id="title"><b>Rotina de Trabalho  </b></p>
+						    <p class="mdi mdi-arrow-right-bold-circle" id="text">Estar no local de trabalho sempre 5 minutos antes do horário inicial de cada jornada;</p>
+						    <p class="mdi mdi-arrow-right-bold-circle" id="text">Não serão permitidos Serviços particulares efetuados no horário de trabalho da Empresa;</p>
+						    <p class="mdi mdi-arrow-right-bold-circle" id="text">Acesso a Redes Sociais dentro do horário de trabalho;</p>
+						    <p class="mdi mdi-arrow-right-bold-circle" id="text">Manter o comprometimento e foco no trabalho;</p>
+						    <p class="mdi mdi-arrow-right-bold-circle" id="text">Manter o seu local de trabalho organizado, zelando pelos equipamentos utilizados no mesmo;</p>
+                        </div> 
+                        <!--Atendimento-->
+                        <div class="tab-pane" id="atendimento">
+                            <p class="title" id="title"><b>Suporte Primeiro Nivel</b></p>
+                            <p class="text" id="text">Monitorar os chamados abertos, levantando o problema inicial no atendimento, sendo verificada a solução neste nível e fechar o mesmo. Caso não seja possível resolver o chamado no primeiro nível, encaminhar para o segundo nível devidamente testado e documentado, conforme descrito no próximo tópico. </p>
+                            <p class="mdi mdi-arrow-right-bold-circle" class="text" id="text">Prestar atendimento de forma cordial e atencioso ao cliente;</p>  
+                            <p class="mdi mdi-arrow-right-bold-circle" class="text" id="text">Identificar possíveis melhorias no cliente;</p>
+                            <p class="title" id="title"><b>Suporte Segundo Nivel – Teorema</b></p>
+                            <p class="text" id="text">Somente deverão ser encaminhados os chamados já previamente analisados e com todo o descritivo do processo, testes com a última versão / releases, inclusive com a documentação padrão para análise de processos e envio da base de dados atualizada no FTP da Empresa;</p>
+                            <p class="title" id="title"><b>Alterações / Desenvolvimento de Novos Processos</b></p>
+                            <p class="text" id="text">Todas as solicitações para alteração, desenvolvimento de novas rotinas ou módulos, devem primeiramente passar por analise onde serão verificadas as reais necessidades e embasamentos legais, somente após enviadas para Segundo Nível - Teorema, devidamente documentadas, aprovadas pelo solicitante de forma oficial (assinadas ou confirmadas por e-mail);</p>
+                            <p class="title" id="title"><b>Consultoria</b></p>
+                            <p class="text" id="text">Os chamados identificados com a necessidade de Consultoria deverão ser repassados para o Setor Comercial, serão analisados e conforme cronograma definido no cliente.</p>
+                            <p class="title" id="title"><b>Atendimento Externo</b></p>
+                            <p class="text" id="text">Todo atendimento em que haja a necessidade deslocamento até o cliente, devera ser acompanhado da R.A. (Relatório de Atendimento), preenchido de forma correta e detalhada com todo os processos desenvolvidos e implementados no cliente, mencionando inclusive o chamado a que este se refere. O R.A. devera ser entregue ao Coordenador no próximo dia útil para analise e posterior arquivamento;</p>
+                            <p class="title" id="title"><b>Cobrança</b></p>
+                            <p class="text" id="text">A cobrança por um serviço prestado é justa, porém a correta analise do problema ocorrido é de fundamental importância para evitarmos atritos e demais insatisfações ocorridas por atendimentos mal feitos ou de forma parcial gerando a necessidade de retorno novamente no cliente e consequentemente o retrabalho. Toda a cobrança devera ser previamente acertada via documento (orçamento), e aprovada pelo cliente, somente após este processo devera ser emitida a cobrança;</p>
+                        </div> 
+                        <!--Processo de Atendimento-->
+                        <div class="tab-pane" id="processo">
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">O Atendente deverá verificar o chamado por prioridade / fila de atendimento;</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Transferir o chamado para o seu nome, entrar em contato com o solicitante para início do atendimento. Deve ser realizado a primeira tentativa de contato via ligação telefonica e em segundo caso ser encaminhado mensagem via chat (WhatsApp);</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Iniciar o apontamento do chamado;</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Caso não haja possibilidade de contato com o solicitante, o chamado devera permanecer no seu nome até que o contato seja efetuado e o problema identificado / solucionado;</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Os Chamados com agendamento prévio, deverão constar a data de previsão, permanecer no nome do atendente, o qual no dia e hora marcados deverão ser executados impreterivelmente</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Detalhar todo o processo de atendimento no chamado para que não haja duvidas na solução do problema, servindo de base para a solução de chamados que venham a ser abertos de outros clientes com o mesmo problema;</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Todos os processos específicos como relatórios, acessos, procedimentos, deverão ser informados na abra “processos” indicando o local de armazenamento ou forma que foi implementado na Empresa;</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Não poderão ter chamados sem movimentação superior a 01 dia;</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Não deverão ser apontados dois chamados ao mesmo tempo. Porém podem ser atendidos mais de um chamado ao mesmo tempo, somente referenciar na observação do chamado em qual foi realizado o apontamento.</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Ao finalizar o chamado deverá ser feito com o Status identificado como causa do problema/solicitação; Status estão listados mais abaixo.</p>
+                            <p class="mdi mdi-arrow-right-bold-circle" id="text">Transferir o chamado para a fila de outro atendente sem que haja conhecimento dos coordenadores ou do atendente para foi enviado o chamado.</p>  
+                        </div> 
+                        <!--Listagem de Status-->
+                        <div class="tab-pane" id="listagem">
+                            <div class="panel panel-default">
+                        	    <div class="panel-heading">
+                        		    <h5 class="panel-tittle">
+                        			    <a href="#collapse5" data-toggle="collapse" data-parent="#accordion" class="name_table" id="title">Chamadas em Aberto</a>
+                        		    </h5>
+                        	    </div>
+                        	    <div id="collapse5" class="panel-collapse collapse in">
+                        		    <div class="table-responsive" class="panel-body">
+                        			    <table href="javascript:void(0)" class="table table-bordered"><span class="menu-label"></span>
+                        				    <thead>
+                        				    	<tr>
+                        				    		<th style="width: 20%">Status</th>
+                        				    		<th>Motivo do Uso</th>
+                        				    	</tr>
+                        				    </thead>
+                        				    <tbody>
+                        					   <tr>
+                        					   	<td>Atendimento</td>
+                        					   	<td>Deve manter o chamado neste status caso ainda não tenha sido efetuado nenhum contato.</td>
+                        					   </tr>
+                        					    <tr>
+                        						    <td>Atendimento 1º Nível</td>
+                        						    <td>Após efetuado primeiro contato e/ou cliente pediu para retornar em outro momento. Manter neste status e inserir no chamado o dia/horário do atendimento como previsão.</td>
+                        					    </tr>
+                        					    <tr>
+                        						    <td>Tentativa de Contato </td>
+                        						    <td>Utilizando quando foi efetuado contato via telefone, WhatsApp e e-mail, e ainda não obteve retorno.Este Status tambem pode ser utilizado para fechamento de chamado caso mesmo após tentar por alguns dias e o cliente não retorna o contato.</td>
+                        					    </tr>
+                        					   <tr>
+                        					   	    <td>Analise Detalhada</td>
+                        					   	    <td>Caso o chamado necessitar de uma analise para identificar o problema e soluciona-lo ou documentar para correção.</td>
+                        					   </tr>
+                        					   <tr>
+                        					   	    <td>Monitoramento</td>
+                        					   	    <td>Chamados que é necessário acompanhar o cliente, casos onde é recorrente o erro.</td>
+                        					   </tr>
+                        					   <tr>
+                        					   	    <td>Aguardando Retorno do Cliente</td>
+                        					   	    <td>Depende de validação do cliente para poder encerrar o chamado.</td>
+                        					   </tr>
+                        				    </tbody>
+                        			    </table>
+                        		    </div>
+                        	    </div>
+                            </div>  
+                            <div class="panel panel-default">
+                            	<div class="panel-heading">
+                            		<h5 class="panel-tittle">
+                            			<a href="#collapse6" data-toggle="collapse" data-parent="#accordion" class="name_table" id="title">Chamadas para o 2º Nivel</a>
+                            		</h5>
+                            	</div>
+                        	        <div id="collapse6" class="panel-collapse collapse in">
+                        	        	<div class="table-responsive" class="panel-body">
+                        	        		<table href="javascript:void(0)" class="table table-bordered"><span class="menu-label"></span>
+                        	        			<thead>
+                        	        				<tr>
+                        	        					<th style="width: 20%">Status</th>
+                        	        					<th>Motivo do Uso</th>
+                        	        				</tr>
+                        	        			</thead>
+                        				        <tbody>
+                        				        	<tr>
+                        				        		<td>Atendimento 2º Nível </td>
+                        				        		<td>Chamados em que é necessário encaminhar para correção/ajuste.</td>
+                        				        	</tr>
+                        				        </tbody>
+                        			        </table>
+                        		        </div>
+                        	        </div>
+                                </div>
+                                <div class="panel panel-default">
+                                	<div class="panel-heading">
+                                		<h5 class="panel-tittle">
+                                			<a href="#collapse7" data-toggle="collapse" data-parent="#accordion" class="name_table" id="title">Chamadas Fechadas</a>
+                                		</h5>
+                                	</div>
+                                	<div id="collapse7" class="panel-collapse collapse in">
+                                		<div class="table-responsive" class="panel-body">
+                                			<table href="javascript:void(0)" class="table table-bordered"><span class="menu-label"></span>
+                                				<thead>
+                                					<tr>
+                                						<th style="width: 20%">Status</th>
+                                						<th>Motivo do Uso</th>
+                                					</tr>
+                                				</thead>
+                        				        <tbody>
+                        				        	<tr>
+                        				        		<td>Resolvido pelo Cliente</td>
+                        				        		<td>Chamados em que o cliente solicitou o fechamento por ja ter solucionado o problema.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Reinstalação</td>
+                        				        		<td>Reinstalação de sistema, servidor de notas, etc.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Atualização de Release</td>
+                        				        		<td>Após atualizar o modulo resolveu o problema ou chamado voltou com a correção do desenvolvimento.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Atualização de Versão</td>
+                        				        		<td>Atualização da base para a nova versão.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Manutenção de Banco de Dados</td>
+                        				        		<td>Necessário manutenção no banco para solucionar o problema.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Problema de Rede</td>
+                        				        		<td>Redes diferentes, instabilidade, etc.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Duplicidade</td>
+                        				        		<td>Dois chamados do mesmo cliente com o mesmo problema.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Registro de Base</td>
+                        				        		<td>Registro de licença dos módulos.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Erro de Nota Fiscal</td>
+                        				        		<td>Todos os erros de nota fiscal.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Configuração de Certificado Digital</td>
+                        				        		<td>Configuração do certificado no sistema.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Configuração de E-mail</td>
+                        				        		<td>Configuração do e-mail no usuário ou servidor de notas.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Problemas de Impressão</td>
+                        				        		<td>Impressora sem compartilhamento, driver incorreto, impressão fora de margem, etc.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Erro de Processo</td>
+                        				        		<td>Cliente estava realizando o processo de forma incorreta, o que ocasionou o erro.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Configuração / Alteração de Parâmetros</td>
+                        				        		<td>Quando precisar alterar alguma configuração dentro do sistema, tipo de pagamento, cadastros, bancos, vendedores, etc.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Usuários Manutenção / Criação</td>
+                        				        		<td>Edição/Criação de usuário no sistema</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Problema de Hardware / Equipamento</td>
+                        				        		<td>Defeito físico, seja na CPU ou outro equipamento.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Vendor  Manutenção / Alteração</td>
+                        				        		<td>Problemas relacionados ao Vendor.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Cobrança Bancaria / Homologação / Alteração</td>
+                        				        		<td>Inclusão/ Edição de dados bancários.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Etiquetas Ajuste / Criação</td>
+                        				        		<td>Para edição/criação de etiquetas.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Processo / Duvida / Orientação</td>
+                        				        		<td>Quando necessário sanar alguma duvida do cliente ou orientar sobre algum processo.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Parâmetros Fiscais / Operação / Região / Situação</td>
+                        				        		<td>Quando necessário sanar alguma duvida do cliente ou orientar sobre algum processo.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Plataforma Cloud / Go-Global / TS</td>
+                        				        		<td>Tudo que for relacionado ao ambiente de acesso virtual.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Problema Servidor de Notas</td>
+                        				        		<td>Servidor de notas não inicia.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Intervenção / Banco de Dados / Arquivo XML / Sped</td>
+                        				        		<td>Quando for necessário alguma inversão direto via banco de dados.</td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Treinamento</td>
+                        				        		<td></td>
+                        				        	</tr>
+                        				        	<tr>
+                        				        		<td>Implantação</td>
+                        				        		<td></td>
+                        				        	</tr>
+                        				        </tbody>
+                        			        </table>
+                        		        </div>
+                        	        </div>
+                                </div>
+                            </div>             
+                        </div> 
+                    </div>
+                </div>
+            </div> 
+        </div>                   
+      <!--Start  Footer -->
+      <footer class="footer-main"> 2023 &copy; Datalogos </footer>   
+      <!--End footer -->   
+      <!--JS-->
+      <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+      <script type="text/javascript" src="/assets/js/custom.js"></script>
+      <script type="text/javascript" src="/assets/js/jtablealliant.js"></script>
+      <!--Plugins-->
+      <script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+      <script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+      <script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+      <script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+      <script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+      <script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+      <script src="assets/plugins/nestable/jquery.nestable.js"></script>
+      <!--Pages-->
+      
+      <script src="/assets/pages/nestable-custom.js"></script>  
+      <script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+    </body>
+  <!-- Mirrored from mixpixeltheme.com/mercy/table-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 14:06:05 GMT -->
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Datalogos</title>
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  <!--Imagens-->
+  <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  <!--Plugins-->
+  <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+  <link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/plugins/dropzone/dropzone.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+  <!--CSS-->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+  <link href="/assets/css/icons.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/terceiros.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="fixed-top">
+	<!--Imagem de Carregamento-->
+  <div id="pageloader">   
+          <div class="loader">
+          </div>
+    </div>
+  <link rel="import" href="header.html"> 
+  <div class="wrapper">
+  	<div class="content-main container">
+      <!--Titulo da Pagina-->
+      <div class="page-title-box">
+      	<h4 class="page-title" id="page_title"><i class="fi fi-rr-users-alt"></i><b> Terceiros</b></h4>
+      	<div class="clearfix"></div>
+      </div>
+      <div class="row"> 
+        <div class="col-lg-12"> 
+        	<div class="panel-group" id="accordion">
+          	<div class="panel panel-default">
+            	<div class="panel-heading">
+            			<p id="title"><b>AMBIENTES HOMOLOGADOS</b></p>
+            			<p id="text">As tabelas abaixo estão listados alguns ambientes homologados, por exemplo a listagem de bancos que é possivel emitir boletos via sistema. </p>
+            	</div>
+          	</div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">BANCOS</a>
+                </h4>
+              </div>
+              <div id="collapse1" class="panel-collapse collapse">
+                <div class="table-responsive" class="panel-body">
+                  <table id="table" href="javascript:void(0)"class="table table-bordered"><span class="menu-label"></span>
+                    <script>
+                      // Defina o caminho para o arquivo XLSX
+                      var filePath = "https://docs.google.com/spreadsheets/d/1rkLoabL68iNgg38VOiWUf0v8GsuNcHvyq6erMr2PLjk/edit?usp=sharing";
+                      // Use o método fetch para ler o arquivo como um blob
+                      fetch(filePath)
+                      .then(function(response) {
+                        return response.arrayBuffer();
+                      })
+                      .then(function(arrayBuffer) {
+                        var data = new Uint8Array(arrayBuffer);
+                        var workbook = XLSX.read(data, { type: "array" });
+                        // Selecione a primeira planilha
+                        var firstSheetName = workbook.SheetNames[0];
+                        var worksheet = workbook.Sheets[firstSheetName];
+                        // Use o método utils.sheet_to_html para convertê-la em uma tabela HTML
+                        var table = XLSX.utils.sheet_to_html(worksheet);
+                        document.getElementById("table").innerHTML = table;
+                      });
+                    </script>
+                  </table> 
+                </div>
+              </div>
+            </div>
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h4 class="panel-title">
+                  <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">NFS-e</a>
+                </h4>
+              </div>
+               <div id="collapse2" class="panel-collapse collapse">
+                <div class="table-responsive" class="panel-body">
+                  <input type="text" id="searchInput" onkeyup="searchTable()" placeholder="Pesquisar Cidade" style="margin-left: 10px; margin-bottom: 10px">
+                  <table id="table2" href="javascript:void(0)"class="table table-bordered"><span class="menu-label"></span>
+                    <script>
+                      // Defina o caminho para o arquivo XLSX
+                      var filePath = "https://docs.google.com/spreadsheets/d/1Xv9rTe2mfCB-2ZFqEWulCjAKXnGib9jFkHkgwC_ZMqo/edit?usp=sharing";
+                      // Use o método fetch para ler o arquivo como um blob
+                      fetch(filePath)
+                      .then(function(response) {
+                        return response.arrayBuffer();
+                      })
+                      .then(function(arrayBuffer) {
+                        var data = new Uint8Array(arrayBuffer);
+                        var workbook = XLSX.read(data, { type: "array" });
+                        // Selecione a primeira planilha
+                        var firstSheetName = workbook.SheetNames[0];
+                        var worksheet = workbook.Sheets[firstSheetName];
+                        // Use o método utils.sheet_to_html para convertê-la em uma tabela HTML
+                        var table = XLSX.utils.sheet_to_html(worksheet);
+                        document.getElementById("table2").innerHTML = table;
+                      });
+                    </script>
+                  </table>
+                </div>
+              </div>
+            </div>		
+        	</div>
+      	</div>
+    	</div> 
+    	<!-- End responsive Table-->
+
+    <footer class="footer-main"> 2023 &copy; Datalogos </footer>   
+
+
+	<!--JS-->
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+	<script type="text/javascript" src="/assets/js/custom.js"></script>
+	<script type="text/javascript" src="/assets/js/jtablealliant.js"></script>
+  <script type="text/javascript" src="/assets/js/terceiros.js"></script>
+  <!--Importações-->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
+	<!--Plugins-->
+	<script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+	<script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+	<script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+	<script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+	<script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+	<script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+	<!--Pages-->
+  <script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+	</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Datalogos</title>
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  <!--Imagens -->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <!-- Plugins -->
+  <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+  <link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+  <!-- CSS -->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/icons.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/download-page.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fixed-top">
+  <!--Imagem de Carregamento-->
+  <div id="pageloader">   
+    <div class="loader">
+    </div>
+  </div>
+  <link rel="import" href="header.html"> 
+  <div class="wrapper">
+    <div class="content-main container">
+      <!--Titulo da Pagina-->
+      <div class="page-title-box">
+        <h4 class="page-title" id="page_title"><i class="fi fi-bs-download"></i><b> Downlodas</b></h4>
+        <div class="clearfix"></div>
+      </div>       
+      <div class="row"> 
+        <div class="col-lg-12"> 
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="button-wrap">
+                  <!--Parte do Instalador-->
+                  <p id="title"><b>INSTALADOR</b></p>
+                  <p id="text">Instalador dos executaveis Teorema, nele há 4 tipos de instalação são eles:
+                  <br><b>1 - Instalação Terminal - </b> Onde é instalado apenas os modulos e os componentes necessarios para poder acessar o sistema e gerar relatorios. Precisa apenas selecionar os modulos a serem instalados.
+                  <br>
+                  <br>
+                  <b>2 - Instalação Servidor - </b>Instala o Servidor de Notas, Auditor
+                  <br>
+                  <br>
+                  <b>3 - Apenas Dependências - </b>Será instalado apenas os compententes Firebird, Crystal e ODBC, sendo apenas uma opção para terminais que foram formatados e contém toda a estruturação em backup.
+                  <br>Obs: Dependencias E-Social e REINF ja constam no instalador, sempre com a mais recente.</p>
+                  <center><br><p id="text">Para download clique no botão abaixo. Irá abrir em nova guia o link.</p></center>
+                  <center>
+                    <a  href="https://drive.google.com/file/d/1-BuRTdyr6rU12Xvlq720l5DWnsniaZNk/view?usp=share_link"  class="btn btn-danger" role="button" aria-pressed="true" target="_blank" download id="button">
+                    <i class="mdi mdi-package-down"></i>
+                    Instalador Datalogos
+                  </a></center>
+                </div>
+                <div>
+                  <!--Parte dos Bat's-->
+                  <p id="title"><b>BAT'S</b></p>
+                  <P id="text"><b>Backup e Restore - </b>O arquivo "Backup" como o proprio nome ja diz é utilizado para realizar um backup da base de dados, transformando o FDB em FBK. Ja o arquivo "Restore" realiza o inverso transforma o FBK em FDB.
+                  <br>
+                  <b>Reiniciar Servidores - </b>Utilizado para reiniciar as instancias java, finalizando o mesmo e depois iniciando novamente. Utilizado para o Fênix e Servidor de Notas
+                  <br>
+                  <b>Manutenção de Banco de Dados - </b>Arquivo utilizado para realizar manutenção no banco de dados, normalmente efetuado em casos de lentidão, estouro de erros no uso, entre outros.<br><b>IMPORTANTE: EFETUAR BACKUP ANTES DE EXECUTAR O ARQUIVO DE MANUTENÇÃO</b></p>
+                  <br>
+                  <center>
+                    <p id="text">Selecione a opção desejada abaixo para baixar os arquivos:</p>
+                    <a href="https://drive.google.com/file/d/1o_m-uD_MkpD8z5kSkTol-VBep3Jgiisc/view" class="btn btn-warning" role="button" aria-pressed="true" target="_blank" download id="button">
+                    <i class="fa fa-wrench"></i>
+                    BAT Backup e Restore
+                  </a>
+                  <a href="https://drive.google.com/file/d/1nfJF_jdQGBF8X_JxICffXZdL-hkPZJpg/view?usp=share_link" class="btn btn-info" role="button" aria-pressed="true" target="_blank" download id="button">
+                    <i class="mdi mdi-reload"></i>
+                    BAT Reiniciar Servidores
+                  </a>
+                  <a href="https://drive.google.com/file/d/1eeaTEa1KJIxRDABzbQ2c7xMhhNf4bzSG/view?usp=share_link" class="btn btn-success" role="button" aria-pressed="true" target="_blank" download id="button">
+                    <i class="mdi mdi-wrench"></i>
+                    BAT Manutenção de Banco de Dados
+                  </a></center>
+                  <!--<button href="https://drive.google.com/u/0/uc?id=1_k-zSLgZ6V6uzC6S4QaqZ41aJ43Zagq_&export=download&confirm=t&uuid=c118a8aa-59ae-4ab7-a229-7599779abe12&at=ALgDtswO6h8cO5XaS2NhpsRJ9mp0:1675865041917" style = background-color:red class="btn btn-danger" role="button" aria-pressed="true" target="_blank" download> Instalador Datalogos</button>
+
+                  <button href="https://drive.google.com/file/d/1JVyruvgSEvb4YuyJYeOqcfn9u_ZgNDXk/view" class="btn btn-warning" role="button" aria-pressed="true" target="_blank" download> <i class="fa fa-wrench"></i> BAT</button>-->
+                </div>  
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Start  Footer -->
+  <footer class="footer-main"> 2023 &copy; Datalogos </footer>   
+  <!--End footer -->
+
+
+<!--BEGIN JQUERY SCRIPTS-->
+<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+<script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+<script type="text/javascript" src="/assets/js/custom.js"></script>
+<script type="text/javascript" src="/assets/js/jtablealliant.js"></script>
+
+<!-- BEGIN PAGE LEVEL SCRIPTS -->
+<script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+<script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+<script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+<script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+<script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+<script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+<!-- END PAGE LEVEL SCRIPTS -->
+<!--END JQUERY SCRIPTS-->
+
+</body>
+
+
+<!-- Mirrored from mixpixeltheme.com/mercy/table-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 14:06:05 GMT -->
+</html>

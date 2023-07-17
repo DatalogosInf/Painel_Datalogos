@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+  <html lang="pt-br"> 
+    <head>
+      <meta charset="utf-8" />
+      <title>Datalogos</title>
+      <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+      <!--Imagens-->
+      <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+      <!--Plugins-->
+      <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+      <link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+      <link href="/assets/plugins/dropzone/dropzone.css" rel="stylesheet" type="text/css" />
+      <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+      <!--CSS-->
+      <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+      <link href="/assets/css/icons.css" rel="stylesheet">
+      <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+      <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />    
+      <link href="/assets/css/tablealliant.css" rel="stylesheet">
+    </head>
+    <body class="fixed-top">
+      <!--Imagem de Carregamento-->
+      <div id="pageloader">   
+        <div class="loader">
+        </div>
+      </div>
+      <link rel="import" href="header.html">
+      <div class="wrapper">
+        <div class="content-main container">   
+          <!--Titulo da Pagina-->
+          <div class="page-title-box">
+            <h4 class="page-title" id="page_title"><i class="fi fi-rr-data-transfer"></i><b> Servidores</b></h4>
+            <div class="clearfix"></div>
+          </div>      
+          <div class="row"> 
+            <div class="col-lg-12"> 
+              <div class="panel-group" id="accordion">
+                <div class="panel">  
+                  <div class="panel-heading">
+                    <div>
+                      <p id="title"><b>SERVIDORES CLOUD</b></p>
+                      <p id="text">Abaixo está listado todos os servidores cloud, no caso onde encontra-se o servidor de notas dos clientes que utilizam este ambiente de acesso. Apenas clicar em cima do nome do servidor para abrir a lista suspensa de cada cliente contido no acesso selecionado.
+                      <br>Podem ocorrer atualizações na lista!!
+                      <br><b>Obs. Para links do XML-Center pode ser necessário abrir na guia anonima para funcionar caso esteja utilizando um navegador que utilize HTTPS por padrão. Ex: Google Chrome</b></p>
+                      <input type="text" id="search-box" placeholder="Digite aqui para pesquisar" onkeyup="searchTable()">
+                    </div>
+                  </div>
+                </div>
+                <!--Alliant Auditor-->
+                <div class="panel panel-default table-container">  
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">ALLIANT LINUX AUDITOR MULTIBASE</a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in" >
+                    <div class="table-responsive panel-body">
+                      <table href="javascript:void(0)"class="table table-bordered" id="table"><span class="menu-label">
+                        <!--COLUNAS-->
+                        <thead>
+                          <tr>
+                            <th id="cabecalho1"><b>Nº</b></th>
+                            <th id="cabecalho2"><b>NOME FANTASIA</b></th>
+                            <th id="cabecalho3"><b>RAZÃO SOCIAL</b></th>
+                            <th id="cabecalho4"><b>IP</b></th>
+                            <th id="cabecalho5"><b>PORTA</b></th>
+                            <th id="cabecalho6"><b>AUDITOR LINK</b></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>01</td>
+                            <td>Auditor</td>
+                            <td>Auditor Multibase</td>
+                            <td>10.254.80.42</td>
+                            <td>3080</td>
+                            <td><a href="https://datalogos-auditor.teorema.inf.br/teorema-auditor2" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                        </tbody>
+                      </table> 
+                    </div>
+                  </div>
+                </div>
+                <!--Alliant 09-->
+                <div class="panel panel-default table-container">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">ALLIANT LINUX 09</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse in">
+                    <div  class="table-responsive panel-body">
+                      <table class="table table-bordered" id="table">
+                        <thead>
+                          <tr>
+                            <th id="cabecalho1"><b>Nº</b></th>
+                            <th id="cabecalho2"><b>NOME FANTASIA</b></th>
+                            <th id="cabecalho3"><b>RAZÃO SOCIAL</b></th>
+                            <th id="cabecalho4"><b>IP</b></th>
+                            <th id="cabecalho5"><b>PORTA</b></th>
+                            <th id="cabecalho6"><b>XML-CENTER</b></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>01</td>
+                            <td>Araufer</td>
+                            <td>Araufer Comercio de Ferragens</td>
+                            <td>10.254.80.17</td>
+                            <td>4360</td>
+                            <td><a href="http://cloud.teorema.inf.br:4360/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>02</td>
+                            <td>Baterias Lider</td>
+                            <td>Lider Master Electricas</td>
+                            <td>10.254.80.17</td>
+                            <td>5040</td>
+                            <td></td>
+                          </tr>                                                                                                   
+                          <tr>
+                            <td>03</td>
+                            <td>Carroreceiras Carga Pesada</td>
+                            <td>Fabrica de Carroreceiras Carga Pesada</td>
+                            <td>10.254.80.17</td>
+                            <td>4900</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>04</td>
+                            <td>Crachá Digital</td>
+                            <td>Mamcasz Ltda</td>
+                            <td>10.254.80.17</td>
+                            <td>2135</td>
+                            <td></td>
+                          </tr> 
+                          <tr>
+                            <td>05</td>
+                            <td>Eco Carbo</td>
+                            <td>Eco Carbo Comercial Ltda</td>
+                            <td>10.254.80.17</td>
+                            <td>4300</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>06</td>
+                            <td>Dax Energy</td>
+                            <td>Dax Energy Equipamentos</td>
+                            <td>10.254.80.17</td>
+                            <td>4220</td>
+                            <td><a href="http://cloud.teorema.inf.br:4220/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>07</td>
+                            <td>E-Vias</td>
+                            <td>E-Vias Empresa Latiano Americana</td>
+                            <td>10.254.80.17</td>
+                            <td>4600</td>
+                            <td><a href="http://cloud.teorema.inf.br:4600/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>08</td>
+                            <td>H Super Quadras</td>
+                            <td>H Super Quadras</td>
+                            <td>10.254.80.17</td>
+                            <td>5680</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>09</td>
+                            <td>KGF Construtora</td>
+                            <td>K G F Construtora e Incorporadora</td>
+                            <td>10.254.80.17</td>
+                            <td>4920</td>
+                            <td><a href="http://cloud.teorema.inf.br:4920/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>Kwin</td>
+                            <td>João Vitor Malaquias</td>
+                            <td>10.254.80.17</td>
+                            <td>4200</td>
+                            <td><a href="http://cloud.teorema.inf.br:4200/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>                                  
+                          <tr>
+                            <td>11</td>
+                            <td>Satus</td>
+                            <td>Satus Tecnologia Integrada do Plastico</td>
+                            <td>10.254.80.17</td>
+                            <td>4035</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td>Suprinil Beltrao</td>
+                            <td>Suprinil - Suprimentos para Com. Visual</td>
+                            <td>10.254.80.17</td>
+                            <td>5180</td>
+                            <td></td>
+                          </tr>
+                        </tbody>
+                      </table>  
+                    </div>
+                  </div>
+                </div>
+                <!--Alliant 10-->
+                <div class="panel panel-default table-container">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">ALLIANT LINUX 10</a>
+                    </h4>
+                  </div>
+                  <div id="collapse3" class="panel-collapse collapse in">
+                    <div  class="table-responsive panel-body">
+                      <table class="table table-bordered" id="table">
+                        <thead>
+                          <tr>
+                            <th id="cabecalho1"><b>Nº</b></th>
+                            <th id="cabecalho2"><b>NOME FANTASIA</b></th>
+                            <th id="cabecalho3"><b>RAZÃO SOCIAL</b></th>
+                            <th id="cabecalho4"><b>IP</b></th>
+                            <th id="cabecalho5"><b>PORTA</b></th>
+                            <th id="cabecalho6"><b>XML-CENTER</b></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>01</td>
+                            <td>A5 Tecnologia</td>
+                            <td>A5 Tecnologia e Automação de Pesagens</td>
+                            <td>10.254.80.18</td>
+                            <td>5020</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>02</td>
+                            <td>Admir Fernandes</td>
+                            <td>Admir Fernandes Eireli</td>
+                            <td>10.254.80.18</td>
+                            <td>2170</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>03</td>
+                            <td>Arrazo Butique</td>
+                            <td>Cury e Teixeira Vestuario</td>
+                            <td>10.254.80.18</td>
+                            <td>3000</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>04</td>
+                            <td>Artyflex</td>
+                            <td>Sancaflex Industria e Comercio</td>
+                            <td>10.254.80.18</td>
+                            <td>2150</td>
+                            <td></td>
+                          </tr>                                    
+                          <tr>
+                            <td>05</td>
+                            <td>Concregua</td>
+                            <td>Concregua Cocnreto e Argamassa Guarapuava</td>
+                            <td>10.254.80.18</td>
+                            <td>1080</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>06</td>
+                            <td>D'Alice Chocolates</td>
+                            <td>D'Alice Chocolates Industria e Comercio</td>
+                            <td>10.254.80.18</td>
+                            <td>2220</td>
+                            <td></td>
+                          </tr> 
+                          <tr>
+                            <td>07</td>
+                            <td>Distribuidora Guarapuava</td>
+                            <td>PPA Guarapuava Com. de Prod. Eltro Eltronicos</td>
+                            <td>10.254.80.18</td>
+                            <td>3100</td>
+                            <td><a href="http://cloud.teorema.inf.br:3100/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>                                   
+                          <tr>
+                            <td>08</td>
+                            <td>Gold</td>
+                            <td>Gold Natural Resin Comercio de Resinas</td>
+                            <td>10.254.80.18</td>
+                            <td>2120</td>
+                            <td><a href="http://cloud.teorema.inf.br:2120/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>09</td>
+                            <td>Instituto de Saude Santa Clara</td>
+                            <td>Instituto de Saude Santa Clara</td>
+                            <td>10.254.80.18</td>
+                            <td>1050</td>
+                            <td><a href="http://cloud.teorema.inf.br:1050/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>Lothbrok Cevejaria</td>
+                            <td>Cervejaria MFR</td>
+                            <td>10.254.80.18</td>
+                            <td>1010</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>Potencia Madeiras</td>
+                            <td>Potencia Compensados e Madeiras</td>
+                            <td>10.254.80.18</td>
+                            <td>4580</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td>Redepel</td>
+                            <td>Geferson Junior Wognei Epp</td>
+                            <td>10.254.80.18</td>
+                            <td>4460</td>
+                            <td><a href="http://cloud.teorema.inf.br:4460/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>13</td>
+                            <td>Yeshua Flroestal</td>
+                            <td>Yeshua Comercial Exportadora</td>
+                            <td>10.254.80.18</td>
+                            <td>2185</td>
+                            <td></td>
+                          </tr>  
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                <!--Alliant 11-->
+                <div class="panel panel-default table-container">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">ALLIANT LINUX 11</a>
+                    </h4>
+                  </div>
+                  <div id="collapse4" class="panel-collapse collapse in">
+                    <div  class="table-responsive panel-body">
+                      <table class="table table-bordered" id="table">
+                        <thead>
+                          <tr>
+                            <th id="cabecalho1"><b>Nº</b></th>
+                            <th id="cabecalho2"><b>NOME FANTASIA</b></th>
+                            <th id="cabecalho3"><b>RAZÃO SOCIAL</b></th>
+                            <th id="cabecalho4"><b>IP</b></th>
+                            <th id="cabecalho5"><b>PORTA</b></th>
+                            <th id="cabecalho6"><b>XML-CENTER</b></th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>01</td>
+                            <td>Agrocerne</td>
+                            <td>A.A. Soroka Agrocerne</td>
+                            <td>10.254.80.19</td>
+                            <td>4800</td>
+                            <td><a href="http://cloud.teorema.inf.br:4800/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>02</td>
+                            <td>Arcol</td>
+                            <td>A.R. Colling</td>
+                            <td>10.254.80.19</td>
+                            <td>2165</td>
+                            <td></td>
+                          </tr>                           
+                          <tr>
+                            <td>03</td>
+                            <td>EVC Transportes</td>
+                            <td>Big Massa Frios e Lacticinios</td>
+                            <td>10.254.80.19</td>
+                            <td>2235</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>04</td>
+                            <td>Expressiva</td>
+                            <td>Expressiva For Men</td>
+                            <td>10.254.80.19</td>
+                            <td>7070</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>05</td>
+                            <td>FM Manuteñções Pesadas</td>
+                            <td>FM Manutenções Pesadas</td>
+                            <td>10.254.80.19</td>
+                            <td>3120</td>
+                            <td><a href="http://cloud.teorema.inf.br:3120/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>06</td>
+                            <td>Gabi Moveis</td>
+                            <td>Ellas Comercio de Moveis</td>
+                            <td>10.254.80.19</td>
+                            <td>4000</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>07</td>
+                            <td>Mac Mil</td>
+                            <td>Mac Mil Agroindustrial</td>
+                            <td>10.254.80.19</td>
+                            <td>4090</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>08</td>
+                            <td>Madecarbo</td>
+                            <td>Madecarbo Industria e Comercio</td>
+                            <td>10.254.80.19</td>
+                            <td>2200</td>
+                            <td><a href="http://cloud.teorema.inf.br:2200/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>09</td>
+                            <td>M. Henning</td>
+                            <td>Matheus Henning</td>
+                            <td>10.254.80.19</td>
+                            <td>4560</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>10</td>
+                            <td>Moveis Lourdes</td>
+                            <td>Elis Diane Mehret Paz</td>
+                            <td>10.254.80.19</td>
+                            <td>3140</td>
+                            <td><a href="http://cloud.teorema.inf.br:3140/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>11</td>
+                            <td>MPW</td>
+                            <td>Multi Ply Wood do Brasil</td>
+                            <td>10.254.80.19</td>
+                            <td>4440</td>
+                            <td><a href="http://cloud.teorema.inf.br:4440/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                          <tr>
+                            <td>12</td>
+                            <td>Start Soluções Corporativas</td>
+                            <td>Compass Componentes Eletronicos</td>
+                            <td>10.254.80.19</td>
+                            <td>3160</td>
+                            <td></td>
+                          </tr>
+                          <tr>
+                            <td>13</td>
+                            <td>Tuboplan / PMM Tubos de Contretos</td>
+                            <td>Patricia Manente Melhem</td>
+                            <td>10.254.80.19</td>
+                            <td>4050</td>
+                            <td><a href="http://cloud.teorema.inf.br:4050/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                          </tr>
+                        </tbody>
+                      </table>  
+                    </div>
+                  </div>
+                </div>
+                <!--Alliant 13-->
+                <div class="panel panel-default table-container">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">ALLIANT LINUX 13</a>
+                    </h4>
+                  </div>
+                  <div id="collapse5" class="panel-collapse collapse in">
+                    <div  class="table-responsive panel-body">
+                     <table class="table table-bordered" id="table">
+                      <thead>
+                        <tr>
+                          <th id="cabecalho1"><b>Nº</b></th>
+                          <th id="cabecalho2"><b>NOME FANTASIA</b></th>
+                          <th id="cabecalho3"><b>RAZÃO SOCIAL</b></th>
+                          <th id="cabecalho4"><b>IP</b></th>
+                          <th id="cabecalho5"><b>PORTA</b></th>
+                          <th id="cabecalho6"><b>XML-CENTER</b></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>Comercial Nader - Guarapuava</td>
+                          <td>Comercial Nader Comercio de Comesmeticos</td>
+                          <td>10.254.80.52</td>
+                          <td>5340</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                          <td>Grupo Arboris</td>
+                          <td>Adeco Ind. de Com. de Compensados</td>
+                          <td>10.254.80.52</td>
+                          <td>6040</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                          <td>Guaramex</td>
+                          <td>Guaramex Comercial</td>
+                          <td>10.254.80.52</td>
+                          <td>4420</td>
+                          <td><a href="http://cloud.teorema.inf.br:4420/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>04</td>
+                          <td>JForest</td>
+                          <td>JForest Participações Florestais</td>
+                          <td>10.254.80.52</td>
+                          <td>4720</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>05</td>
+                          <td>JLS</td>
+                          <td>JLS Transporte e Comercio de Cereias</td>
+                          <td>10.254.80.52</td>
+                          <td>8040</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>06</td>
+                          <td>Mecanica Moria</td>
+                          <td>Sergio Gomes Acessorios</td>
+                          <td>10.254.80.52</td>
+                          <td>5080</td>
+                          <td><a href="http://cloud.teorema.inf.br:5080/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>07</td>
+                          <td>Nader Comercio - Curitiba</td>
+                          <td>Nader Comercio de Cosmeticos</td>
+                          <td>10.254.80.52</td>
+                          <td>4020</td>
+                          <td><a href="http://cloud.teorema.inf.br:4020/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>08</td>
+                          <td>Nicoparts</td>
+                          <td>Carlos Alberto de Morais Com. de Peças Autom.</td>
+                          <td>10.254.80.52</td>
+                          <td>5100</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>09</td>
+                          <td>O Bodegão</td>
+                          <td></td>
+                          <td>10.254.80.52</td>
+                          <td>5140</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>R Martins</td>
+                          <td>R Martins Ferramentas e Maquinas</td>
+                          <td>10.254.80.52</td>
+                          <td>4380</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>Rota 277 Transportes</td>
+                          <td>Rota 277 Transportes</td>
+                          <td>10.254.80.52</td>
+                          <td>6020</td>
+                          <td><a href="http://cloud.teorema.inf.br:6020/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>Sabrina Transportes Florestais</td>
+                          <td>B&S Transportes</td>
+                          <td>10.254.80.52</td>
+                          <td>4660</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>  
+                  </div>
+                </div>
+              </div>
+              <!--Alliant 16-->
+              <div class="panel panel-default table-container">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">ALLIANT LINUX 16</a>
+                  </h4>
+                </div>
+                <div id="collapse6" class="panel-collapse collapse in">
+                  <div  class="table-responsive panel-body">
+                    <table class="table table-bordered" id="table">
+                      <thead>
+                        <tr>
+                          <th id="cabecalho1"><b>Nº</b></th>
+                          <th id="cabecalho2"><b>NOME FANTASIA</b></th>
+                          <th id="cabecalho3"><b>RAZÃO SOCIAL</b></th>
+                          <th id="cabecalho4"><b>IP</b></th>
+                          <th id="cabecalho5"><b>PORTA</b></th>
+                          <th id="cabecalho6"><b>XML-CENTER</b></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>Dialeto Consulta</td>
+                          <td>Dialeto Informatica</td>
+                          <td>10.254.80.55</td>
+                          <td>5640</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                          <td>Innovadrones</td>
+                          <td>Innovadrones Ltda</td>
+                          <td>10.254.80.55</td>
+                          <td>5700</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                          <td>Korobinski</td>
+                          <td>Korobinski e Cia</td>
+                          <td>10.254.80.55</td>
+                          <td>5460</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>04</td>
+                          <td>Licit+</td>
+                          <td>LA Licitacoes</td>
+                          <td>10.254.80.55</td>
+                          <td>5780</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>05</td>
+                          <td>L.O.D. Rocha Reciclagem e Transformação</td>
+                          <td>L.O.D. Rocha Reciclagem e Transformação Eireli</td>
+                          <td>10.254.80.55</td>
+                          <td>5780</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>06</td>
+                          <td>Menegusso Maquinas</td>
+                          <td>Dimorvan Davi Menegusso</td>
+                          <td>10.254.80.55</td>
+                          <td>5600</td>
+                          <td><a href="http://cloud.teorema.inf.br:5600/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>07</td>
+                          <td>Sol Connect Energia</td>
+                          <td>Izzy Energy</td>
+                          <td>10.254.80.55</td>
+                          <td>5660</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>08</td>
+                          <td>Start Soluções Corporativas</td>
+                          <td>Start Soluções Corporativa</td>
+                          <td>10.254.80.55</td>
+                          <td>5720</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>09</td>
+                          <td>Suprinil- Beltrao ADM</td>
+                          <td>Surpinil - Suprimentos Para Com. Visual</td>
+                          <td>10.254.80.55</td>
+                          <td>5240</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>10</td>
+                          <td>Suprinil - IPX ADM</td>
+                          <td>Surpinil - Suprimentos Para Com. Visual</td>
+                          <td>10.254.80.55</td>
+                          <td>5260</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>11</td>
+                          <td>Suprinil - WR ADM</td>
+                          <td>Surpinil - Suprimentos Para Com. Visual</td>
+                          <td>10.254.80.55</td>
+                          <td>5280</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>12</td>
+                          <td>Suprinil IPX</td>
+                          <td>Surpinil - Suprimentos Para Com. Visual</td>
+                          <td>10.254.80.55</td>
+                          <td>5200</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>13</td>
+                          <td>Suprinil WR</td>
+                          <td>Surpinil - Suprimentos Para Com. Visual</td>
+                          <td>10.254.80.55</td>
+                          <td>5220</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>  
+                  </div>
+                </div>
+              </div>         
+              <!--Alliant ADM Windows-->                   
+              <div class="panel panel-default table-container">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">ALLIANT ADM - WINDOWS</a>
+                  </h4>
+                </div>
+                <div id="collapse7" class="panel-collapse collapse in">
+                  <div  class="table-responsive panel-body">
+                    <table href="javascript:void(0)"class="table table-bordered" id="table"><span class="menu-label">
+                      <thead>
+                        <tr>
+                          <th><b>Nº</b></th>
+                          <th><b>NOME FANTASIA</b></th>
+                          <th><b>RAZÃO SOCIAL</b></th>
+                          <th><b>IP</b></th>
+                          <th><b>PORTA</b></th>
+                          <th><b>OBS.</b></th>
+                          <th><b>XML-CENTER</b></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>Homem Leão</td>
+                          <td></td>
+                          <td>10.254.80.4</td>
+                          <td>4680</td>
+                          <td>Usa IPM (NFS-e)</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                          <td>Kandir</td>
+                          <td></td>
+                          <td>10.254.80.4</td>
+                          <td>4100</td>
+                          <td>Usa IPM (NFS-e)</td>
+                          <td><a href="http://cloud.teorema.inf.br:4100/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                          <td>Laboro Madeiras</td>
+                          <td>Laboro Madeiras</td>
+                          <td>10.254.80.5</td>
+                          <td>1030</td>
+                          <td>Usa IPM (NFS-e)</td>
+                          <td><a href="http://cloud.teorema.inf.br:1030/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>04</td>
+                          <td>Le Souk - Zingaro</td>
+                          <td>Zingaro Participações em Empresas</td>
+                          <td>10.254.80.5</td>
+                          <td>9090</td>
+                          <td>Impressora VPN</td>
+                          <td><a href="http://cloud.teorema.inf.br:9090/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>05</td>
+                          <td>Peppe Roçadeiras</td>
+                          <td>Peppe Roçadeiras e Motoserras</td>
+                          <td>10.254.80.4</td>
+                          <td>4070</td>
+                          <td>Usa IPM (NFS-e)</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>06</td>
+                          <td>Repinho</td>
+                          <td>Repinho Reflorestadora Mad. e Com.</td>
+                          <td>10.254.80.4</td>
+                          <td>4096</td>
+                          <td>Impressora VPN</td>
+                          <td><a href="http://cloud.teorema.inf.br:4096/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>07</td>
+                          <td>Santa Tereza EL</td>
+                          <td></td>
+                          <td>10.254.80.4</td>
+                          <td>4820</td>
+                          <td>Impressora VPN</td>
+                          <td></td>
+                        </tr>
+                        <tr>
+                          <td>08</td>
+                          <td>Teorema</td>
+                          <td>Primak Campos Ltda</td>
+                          <td>10.254.80.5</td>
+                          <td>8080</td>
+                          <td>Webservice</td>
+                          <td><a href="http://cloud.teorema.inf.br:8080/teoremaee/xmlcenter/#/login" target="_blank">Clique para abrir</a></td>
+                        </tr>
+                        <tr>
+                          <td>09</td>
+                          <td>Viking</td>
+                          <td>Viking Global Brasil Investimentos</td>
+                          <td>10.254.80.4</td>
+                          <td>4740</td>
+                          <td>Impressora VPN</td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table> 
+                  </div>
+                </div>
+              </div>
+              <!--Sem Servidores-->
+              <div class="panel panel-default table-container">
+                <div class="panel-heading">
+                  <h4 class="panel-title">
+                    <a data-toggle="collapse" data-parent="#accordion" href="#collapse8">SEM SERVIDOR DE NOTAS</a>
+                  </h4>
+                </div>
+                <div id="collapse8" class="panel-collapse collapse in">
+                  <div  class="table-responsive panel-body">
+                    <table href="javascript:void(0)"class="table table-bordered" id="table"><span class="menu-label">
+                      <thead>
+                      	<tr>
+                          <th><b>Nº</b></th>
+                          <th><b>NOME FANTASIA</b></th>
+                          <th><b>RAZÃO SOCIAL</b></th>
+                          <th><b>OBS.</b></th>
+                          <th><b>AGENTE</b></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>01</td>
+                          <td>Clestiane Ana Cola</td>
+                          <td>Clestiane Ana Cola</td>
+                          <td>Escritorio Contabil</td>
+                          <td>DATALOGOS</td>
+                        </tr>
+                        <tr>
+                          <td>02</td>
+                          <td>Davi Augusto Likes</td>
+                          <td>Likes Contabilidade</td>
+                          <td>Escritorio Contabil</td>
+                          <td>DATALOGOS</td>
+                        </tr>
+                        <tr>
+                          <td>03</td>
+                          <td>João Luis de Almeida</td>
+                          <td>Sivic Controller</td>
+                          <td>Escritorio Contabil</td>
+                          <td>DATALOGOS</td>
+                        </tr>
+                      </tbody>
+                    </table> 
+                  </div>
+                </div>
+              </div>
+            </div>  
+          </div>
+        </div>                   
+      <!--Start  Footer -->
+      <footer class="footer-main"> 2023 &copy; Datalogos </footer>   
+      <!--End footer -->   
+      <!--JS-->
+      <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+      <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+      <script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+      <script type="text/javascript" src="/assets/js/custom.js"></script>
+      <script type="text/javascript" src="/assets/js/cunsulta.js"></script>
+      <script type="text/javascript" src="/assets/js/jtablealliant.js"></script>
+      <script type="text/javascript" src="/assets/js/tablealliant.js"></script>
+      <!--Importações-->
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.15.5/xlsx.full.min.js"></script>
+      <!--Plugins-->
+      <script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+      <script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+      <script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+      <script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+      <script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+      <script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+      <!--Pages-->  
+      <script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+    </body>
+  <!-- Mirrored from mixpixeltheme.com/mercy/table-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 14:06:05 GMT -->
+</html>

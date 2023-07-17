@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Datalogos</title>
+  <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  <!--Imagens-->
+  <link rel="icon" href="assets/images/favicon.png" type="image/png">
+  <!--Plugins-->
+  <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+  <link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+  <!--CSS-->
+  <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" /> 
+  <link href="/assets/css/icons.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+  <link href="/assets/css/manuais-page.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="fixed-top">
+  <!--Imagem de Carregamento -->
+  <div id="pageloader">   
+    <div class="loader">
+    </div>
+  </div>
+  <link rel="import" href="header.html">
+  <div class="wrapper">
+    <div class="content-main container">
+      <!--TItulo da Pagina-->
+      <div class="page-title-box">
+        <h4 class="page-title" id="page_title"><i class="fi fi-rr-document"></i><b> Manuais</b></h4>
+        <div class="clearfix"></div>
+      </div>       
+      <!-- DIV dos Manuais-->
+      <div class="row"> 
+        <div class="col-lg-12"> 
+          <div class="panel-group" id="accordion">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <div class="button-wrap">
+                  <!--Links Ambientes de Manuais-->
+                  <p id="title"><b>Ambientes de Manuais</b></p>
+                  <center>
+                    <br>
+                    <a  href="https://teorema.assetway.com.br/p/basedeconhecimento"  class="btn btn-info" role="button" aria-pressed="true" target="_blank" download id="button">
+                      <i class="mdi mdi-book-open-page-variant"> Ambiente Assetway - Cliente</i>
+                    </a>
+                    <a  href="https://teorema.assetway.com.br/login"  class="btn btn-info" role="button" aria-pressed="true" target="_blank" download id="button">
+                      <i class="mdi mdi-book-open-page-variant"> Ambiente Assetway - Suporte</i>
+                    </a>
+                    <a  href="http://192.168.0.1/manuais_restrita/manuais/ambiente_de_aprendizagem.html"  class="btn btn-info" role="button" aria-pressed="true" target="_blank" download id="button">
+                      <i class="mdi mdi-book-open-page-variant"> Ambiente de Aprendizagem</i>
+                    </a>
+                  </center>
+                </div>
+                <div>
+                  <br>
+                  <br>
+                  <p id="text">Abaixo estão listados alguns manuais de uso nas rotinas do suporte, ao clicar na opção abre direto o manual no ambiente assetway.<br>Lembrando que alguns manuais precisam de login para acessar.</p>
+                  <br>
+                  <!--Manuais do Suporte-->
+                  <p id="title"><b>Manuais Suporte</b></p>
+                  <center>
+                    <a href="https://teorema.assetway.com.br/search/753" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Atualização PAF</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/297" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Atualização Versão</p> 
+                    </a>
+                  	<a href="https://teorema.assetway.com.br/search/2140" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Autorização de Uso da Receita</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/296" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Configuração Base de Log's</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/2147" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Instalação Certificado A1</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/1932" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Instalação Fenix</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/2093" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Instalação Sistema - Terminal</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/2132" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position" >
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Manual Atendimento Chat</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/744" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image"src="/assets/images/pdfico.ico">
+                      <p>Performance Firebird</p> 
+                    </a>
+                  </center>
+                  <!--Manuais do Cloud-->
+                  <br>
+                  <p id="title"><b>Manuais Cloud</b></p>
+                  <center>
+                    <a href="https://teorema.assetway.com.br/search/309" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position" >
+                      <img id="image"src="/assets/images/pdfico.ico">
+                      <p>Alteração de Usuarios</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/304" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position" >
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Atualização Releases Clientes</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/1858" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Atualização Versão Clientes</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/294" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Configuração Backup</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/306" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Configuração Certificado</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/p/basedeconhecimento/search/305" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico-among.ico">
+                      <p>Instalação GO-Global </p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/265" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Migração Local para Cloud </p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/292" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Restprinter(Impressão) </p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/1712" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Restauração do Repbackup</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/287" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Utilização FTP Cloud </p> 
+                    </a>
+                  </center>
+                  <br>
+                  <p id="title"><b>Manuais Delphi</b></p>
+                  <center>
+                    <a href="https://teorema.assetway.com.br/search/1974" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>App Invetario 2 </p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/1717" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Instalação Atualiza Custos</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/318" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Instalação PAF</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/311" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Relatorios Junta Comercial </p> 
+                    </a>
+                  </center>
+                  <br>
+                  <p id="title"><b>Manuais Web</b></p>
+                  <center>
+                    <a href="https://teorema.assetway.com.br/search/1834" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Atualização Auditor</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/323" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Instalação Auditor</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/327" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Instalação Servidor de Notas</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/324" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Liberação WebService</p> 
+                    </a>
+                    <a href="https://teorema.assetway.com.br/search/538" class="btn btn-light" role="button" aria-pressed="true" target="_blank" download id="position">
+                      <img id="image" src="/assets/images/pdfico.ico">
+                      <p>Reinicialização Servidor de Notas</p> 
+                    </a>
+                  </center>
+                </div>
+              </div>  
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>               
+
+  <!--Start  Footer -->
+  <footer class="footer-main"> 2023 &copy; Datalogos </footer>   
+  <!--End footer -->
+  <!--JS-->
+  <script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+  <script type="text/javascript" src="/assets/js/custom.js"></script>
+  <script type="text/javascript" src="/assets/js/jtablealliant.js"></script>
+  <!--Plugins-->
+  <script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+  <script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+  <script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+  <script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+  <script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+  <script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+  <!--Pages-->
+  <script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+
+</body>
+<!-- Mirrored from mixpixeltheme.com/mercy/table-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 14:06:05 GMT -->
+</html>

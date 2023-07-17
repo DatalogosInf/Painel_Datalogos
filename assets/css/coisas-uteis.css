@@ -1,0 +1,85 @@
+.lista{
+	column-count: 3;
+	column-gap: 25px;
+}
+.lista{
+	float: left;
+	max-width: 100%;
+	display: inline-block;
+}
+#loading{
+	margin-top: -100px;
+	margin-left: -150px;
+	margin-right: 100px;
+	margin-bottom:100px;
+}
+#title{
+  font-size: 20px;
+  margin-left: 10px;
+  font-family:'Consolas';
+ }
+#text{
+ 	margin-left: 10px;
+ 	font-size: 20px;
+ }
+#page-title{
+ 	font-size: 40px;
+ 	position: relative;
+  left: 450px;
+ }
+ .tab-content{
+  width: 100%;
+  height: 600px
+ }
+.loader {
+  animation: is-rotating 1s infinite;
+  border: 20px solid #e5e5e5;
+  border-radius: 100%;
+  border-top-color: #FF3B2A;
+  height: 150px;
+  width: 150px;
+  margin-top: -100px;
+  margin-left: -50px;
+  margin-right: 100px;
+  margin-bottom:100px;
+}
+
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+/* Estilos para as abas */
+    .tab {
+      overflow: hidden;
+      border: 1px solid #ccc;
+      background-color: #FFFFFF;
+    }
+
+    /* Links das abas */
+    .tab button {
+      background-color: inherit;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 12px 14px;
+      transition: 0.3s;
+    }
+
+    /* Mudar a cor do link ao passar o mouse */
+    .tab button:hover {
+      background-color: #ddd;
+    }
+
+    /* Estilos do conteúdo das abas */
+    .tabcontent {
+      display: none;
+      padding: 6px 12px;
+      border: 1px solid #ccc;
+      border-top: none;
+    }
+    /* Estilos para a aba ativa */
+.tab button.active {
+  background-color: #ccc;
+}

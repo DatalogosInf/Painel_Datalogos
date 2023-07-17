@@ -1,0 +1,259 @@
+    
+    <!DOCTYPE html>
+    <html lang="pt-br">
+
+<head>
+   	<meta charset="utf-8" />
+    <title>Datalogos</title>
+    <meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+    <!--Imagens-->
+    <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+    <!--Plugins-->
+    <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+    <link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+    <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+    <!--CSS-->
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />    
+    <link href="/assets/css/icons.css" rel="stylesheet">
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+    <link href="/assets/css/dashboard.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/ionic-framework@latest/css/ionic.min.css" rel="stylesheet">
+    <!--Importações Primarias-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.0/dist/chart.min.js"></script>
+    <script src="https://www.chartjs.org/samples/latest/utils.js"></script>
+    <script src="https://unpkg.com/chartjs-plugin-zoompan@^1.1.1"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <link rel="import" href="/assets/header.html">
+
+</head>
+    
+<body class="fixed-top">
+  <!--Imagem de Carregamento -->
+  <div id="pageloader">   
+    <div class="loader"></div>
+  </div>
+  
+  <div class="wrapper">
+    <div class="content-main container">
+      <!--Titulo da Pagina-->
+       <div class="page-title-box">
+        <h4 class="page-title" id="page-title"><i class="fi fi-br-home"></i><b> Dashboard</b></h4>
+        <div class="clearfix"></div>
+      </div>         
+      <!--Estatisticas Suporte-->
+      <div class="row">
+        <!--<div class="col-md-12" class="btn btn-light" id="notice">
+          <div class="carousel">
+            <div class="carousel__slide">
+              <img src=""|ENDERECO_PATH|"/assets/images/confra.png" alt="Imagem 1">
+            </div>
+            <div class="carousel__slide">
+              <img src=""|ENDERECO_PATH|"/assets/images/reuniao.png" alt="Imagem 2">
+            </div>
+            <div class="carousel__slide">
+              <img src=""|ENDERECO_PATH|"/assets/images/confra.png" alt="Imagem 3">
+            </div>
+          </div>
+          <button class="carousel__prev"><img src=""|ENDERECO_PATH|"/assets/images/left.png" style="position: relative; top: 50px; width: 40px; height: 30px"></button>
+          <button class="carousel__next"><img src=""|ENDERECO_PATH|"/assets/images/right.png" style="position: relative;top: 50px; width: 40px; height: 30px"></button>
+        </div>-->
+        <div class="col-md-4">
+          <div class="panel panel-color  panel-danger" id="panel2">
+            <div class="panel-heading">
+              <h3 class="panel-title" id="title">Escala Atendimento Chat</h3>
+            </div>
+            <div class="panel-body">
+              <p id="text">
+                - Andre - 10 a 11 de Julho<br>
+                - Christian - 17 a 21 de Julho<br>
+                - Guilherme - 24 a 28 de Julho<br>
+                - João Gabriel - 31 de Julho a 04 de Agosto<br>
+                - Jonas - 07 a 11 de Agosto<br>
+                - Laercio - 14 a 18 de Agosto<br> 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="tab">
+          <button class="tablinks" onclick="openTab(event, 'text0')">PRIORIDADE 0</button>		
+        	<button class="tablinks" onclick="openTab(event, 'text1')">PRIORIDADE 1</button>
+        	<button class="tablinks" onclick="openTab(event, 'text2')">PRIORIDADE 2</button>
+        	<button class="tablinks" onclick="openTab(event, 'text3')">PRIORIDADE 3</button>
+        	<button class="tablinks" onclick="openTab(event, 'text4')">PRIORIDADE 4</button>
+        	<button class="tablinks" onclick="openTab(event, 'text5')">PRIORIDADE 5</button>
+        	<button class="tablinks" onclick="openTab(event, 'text7')">PRIORIDADE 7</button>
+        	<button class="tablinks" onclick="openTab(event, 'text8')">PRIORIDADE 8</button>
+        	<button class="tablinks" onclick="openTab(event, 'text9')">PRIORIDADE 9</button>
+        </div>
+        <div id="text0" class="tabcontent">
+            <!--Text 0 -->
+          <p id="title"><b>Situações:</b></p>
+          <p id="text">- Documentos Eletrônicos <br>- Situações Emergenciais (Impacta diretamente os processos da empresa.) </p>
+          <p id="title"><b>Tempo de Resposta:</b></p>
+          <p id="text">Imediato e não deve exceder 30 minutos para primeiro contato.</p>
+          <p id="title"><b>Usuário:</b></p>
+          <p id="text">Ficará de responsabilidade de 2 usuarios por semana em atenderem as notas, seguindo o padrão abaixo.<br>- Guilherme e Samuel<br>- Jonas e Willian Cordeiro<br>- Christian e Gustavo<br>- André e Davi</p>
+          <p id="title"><b>Regras:</b></p>
+          <p id="text">Ao iniciar deve ser alterado o status do chamado para <b>Atendimento de 1ºNivel</b> e tambem o usuário e o executor de quem fez o contato.</p>
+          <p id="title"><b>Específicos:</b></p>
+          <p id="text"><b>Auditor:</b>Chamados de Erro ou a Tarefa Parou de Funcionar.<br><b>Gestão de Pessoal:</b>Não devem estar nessa prioridade.</p>
+        </div>
+        <div id="text1" class="tabcontent">
+          <!--Text 1 -->
+        	<p id="title"><b>Situações:</b></p>
+        	<p id="text">- Atualização de Release <br>- Configuração de E-mail <br>- Instalação <br>- Erros Básicos em Geral</p>
+        	<p id="title"><b>Tempo de Resposta:</b></p>
+        	<p id="text">Tempo máximo de primeiro contato 4 Horas.</p>
+        	<p id="title"><b>Usuário:</b></p>
+          <p id="text">Estes chamados são de responsabilidade do usuario/executor, manter no mesmo até ser resolvido. <br>Somente mudar o usuário em caso de documentação, já o executor deve ser mantido.
+          <p id="title"><b>Regras:</b></p>
+          <p id="text">Nessa prioridade devem ser deixados os chamados que serão encaminhados com documentação para correção/analise e os que não demandam grande tempo de análise.</p>
+        	<p id="title"><b>Específicos:</b></p>
+        	<p id="text"><b>Auditor:</b>Chamados de Fácil desenvolvimento - Tempo Máximo de Desenvolvimento = 2hrs</p>
+        </div>
+        <div id="text2" class="tabcontent">
+          <!--Text 2 -->
+        	<p id="title"><b>Situações:</b></p>
+        	<p id="text">- Chamados de Análise <br>- Levantamento <br>- Documentação</p>
+        	<p id="title"><b>Tempo de Resposta:</b></p>
+        	<p id="text">Tempo máximo de primeiro contato 4 Horas. Nesse caso pode ser agendado com o cliente.</p>
+        	<p id="title"><b>Usuário:</b></p>
+          <p id="text">Estes chamados são de responsabilidade do usuario/executor, manter no mesmo até ser resolvido. <br>Somente mudar o usuário em caso de documentação, o executor deve ser mantido.</p>
+          <p id="title"><b>Regras:</b></p>
+          <p id="text">Chamados que demandam uma análise maior antes de ser corrigido. <br><b>Informar a data de previsão em casos de agendamento com o cliente</b>. <br>Após documentar deve ser alterado para <b>Prioridade 1</b></p>
+         	<p id="title"><b>Específicos:</b></p>
+         	<p id="text"><b>Auditor:</b>Chamados de Fácil desenvolvimento - Tempo Máximo de Desenvolvimento = 4hrs</p>
+        </div>
+        <div id="text3" class="tabcontent">
+          <!--Text 3 -->
+        	<p id="title"><b>Situações:</b></p>
+        	<p id="text">- Aguardando Retorno do Cliente</p>
+        	<p id="title"><b>Tempo de Resposta:</b></p>
+        	<p id="text">Utilizar data de previsão. </p>
+        	<p id="title"><b>Usuário:</b></p>
+        	<p id="text">Estes chamados são de responsabilidade do usuario/executor, manter no mesmo até ser resolvido.</p>
+        	<p id="title"><b>Regras:</b></p>
+        	<p id="text">Sempre ir atualizando o chamado com a data de previsão, informando a data que o cliente passou de retorno.</p>
+        	<p id="title"><b>Específicos:</b></p>
+        	<p id="text"></b></p>
+        </div>
+        <div id="text4" class="tabcontent">
+          <!--Text 4 -->
+        	<p id="title"><b>Situações:</b></p>
+        	<p id="text">- Chamados de Implantação de Processos</p>
+        	<p id="title"><b>Tempo de Resposta:</b></p>
+        	<p id="text">Utilizar data de previsão e usar como base.(Prazo de Implantação)</p>
+        	<p id="title"><b>Usuário:</b></p>
+        	<p id="text">Estes chamados são de responsabilidade do usuario/executor, manter no mesmo até ser finalizado a implantação.</p>
+        	<p id="title"><b>Regras:</b></p>
+        	<p id="text">Ao iniciar o atendimento deve ser alterado o stauts para <b>Implantação. <br>Criar o chamado de documentação do processo com as telas, parametrização</b>, quem foi orientado, usuário responsável pelas liberações caso necessário. Exemplo: Vendor deve ter pelo menos 2 usuários da empresa com liberação ao painel</p>
+        	<p id="title"><b>Específicos:</b></p>
+        	<p id="text"><b>Auditor:</b>Chamados de Desenvolvimento - Tempo Máximo de Desenvolvimento = 8hrs</p>
+        </div>
+        <div id="text5" class="tabcontent">
+          <!--Text 5 -->
+        	<p id="title"><b>Situações:</b></p>
+        	<p id="text">- >Atualização de Versão</p>
+        	<p id="title"><b>Tempo de Resposta:</b></p>
+        	<p id="text">Utilizar data de previsão, que será agendando com o cliente, deve ser informado nas observações do chamado tambem.</p>
+        	<p id="title"><b>Usuário:</b></p>
+        	<p id="text">Estes chamados são de responsabilidade do usuario/executor, manter o mesmo até ser atualizado.</p>
+        	<p id="title"><b>Regras:</b></p>
+        	<p id="text">Sempre agendar com o cliente.<br> Caso haja mudança de data, deve ser registrado o motivo e a nova data no chamado.</p>
+        	<p id="title"><b>Específicos:</b></p>
+        	<p id="text"><b>Auditor:</b>Chamados de Documentação para Desenvolvimento via setor Web</p>
+        </div>
+        <div id="text7" class="tabcontent">
+          <!--Text 7 -->
+        	<p id="title"><b>Situações:</b></p>
+        	<p id="text">- Geração de Manuais<br>- Apontamento de Demandas Internas</p>
+        	<p id="title"><b>Tempo de Resposta:</b></p>
+        	<p id="text"></p>
+        	<p id="title"><b>Usuário:</b></p>
+        	<p id="text">Estes chamados são de responsabilidade do usuario/executor.</p>
+        	<p id="title"><b>Regras:</b></p>
+        	<p id="text">Utilizar essa prioridade somente para os casos citados, e após conclusão encerrar o chamado.</p>
+        	<p id="title"><b>Específicos:</b></p>
+        	<p id="text"></b></p>
+        </div>
+        <div id="text8" class="tabcontent">
+          <!--Text 8 -->
+          <p id="title"><b>Situações:</b></p>
+          <p id="text">- Monitoramento</p>
+          <p id="title"><b>Tempo de Resposta:</b></p>
+          <p id="text">Utilizar data de previsão. Inserir como data quando será efetuado contato novamente, caso o cliente não ligue no periodo.</p>
+          <p id="title"><b>Usuário:</b></p>
+          <p id="text">Estes chamados são de responsabilidade do usuario/executor, manter o mesmo até ser confirmado que o problema encerrou.</p>
+          <p id="title"><b>Regras:</b></p>
+          <p id="text">É importante relatar neste mesmo chamado caso o cliente abra um novo no período de monitoramento.<br>Deve ser acompanhado por pelo menos 15 dias e durante esse período ser feito contato no mínimo 3 vezes.</p>
+          <p id="title"><b>Específicos:</b></p>
+          <p id="text"></b></p>
+        </div>
+        <div id="text9" class="tabcontent">
+          <!--Text 9 -->
+        	<p id="title"><b>Situações:</b></p>
+        	<p id="text">- Chamados sem nenhum contato <br>- Chamados Recém Abertos</p>
+        	<p id="title"><b>Tempo de Resposta:</b></p>
+        	<p id="text">Tempo máximo de primeiro contato 4 Horas. <br>Obs. O tempo de resposta é variável, pois o chamado deve ser realocado para a prioridade correta.</p>
+          <p id="title"><b>Usuário:</b></p>
+          <p id="text">Estes chamados são de responsabilidade do usuario/executor.</p>
+          <p id="title"><b>Regras:</b></p>
+          <p id="text">Os chamados só podem ficar nesta prioridade somente se não foi realizado nenhum contato, porém pode ser realocado antes do contato caso haja necessidade.<br>Todos os chamados novos serão alterados para o usuario nessa prioridade e o mesmo que foi definido deve fazer a realocação.</p>
+        	<p id="title"><b>Específicos:</b></p>
+        	<p id="text"></b></p>
+        </div>
+      </div>
+      <div class="panel panel-default">
+        <div class="tab">
+      	  <button class="tablinks" onclick="openTab(event, 'grafico1')">CHAMADOS ABERTOS</button>
+      	  <button class="tablinks" onclick="openTab(event, 'grafico2')">FLUXO DE CHAMADOS</button>
+      	</div>
+        <div id="grafico1" class="tabcontent">
+          <!-- Gráfico 1 -->
+          <canvas id="divisao"></canvas>
+        	<p id="text-coment">Atualizado dia 28/06/2023</p>
+        </div>
+        <div id="grafico2" class="tabcontent">
+          <!-- Gráfico 2 -->
+          <canvas id="fluxo"></canvas>
+        	<p id="text-coment">Atualizado dia 28/06/2023</p>
+        </div>
+      </div>
+    </div>   
+    <!--Start  Footer -->
+    <footer class="footer-main"> 2023 &copy; Datalogos </footer>	
+    <!--End footer -->
+  </div>
+  <!--End wrapper-->
+  <!--JS-->
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+  <script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+  <script type="text/javascript" src="/assets/js/custom.js"></script>
+  <script type="text/javascript" src="/assets/js/bar-chart.js"></script> 
+  <script type="text/javascript" src="/assets/js/dashboard.js"></script>
+  <!--Plugins-->
+	<script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+  <script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+  <script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+  <script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+  <script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+  <script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+  <!--Importações-->
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCLW4uD7GHAmUoIIQw4TmUGvlME4Ha6u4w&amp;callback=initMap"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <!--Pages-->
+  <script type="text/javascript" src="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.min.js"></script>
+  <script type="text/javascript" src="/assets/plugins/vector-map/jquery-jvectormap-world-mill-en.js"></script>
+  <script type="text/javascript" src="/assets/pages/maps-vector.js" "></script>    
+  <script type="text/javascript" src="/assets/pages/gmap-customs.js"></script>  
+</body> 
+<!-- Mirrored from mixpixeltheme.com/mercy/dashboard4.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 14:05:56 GMT -->
+</html>

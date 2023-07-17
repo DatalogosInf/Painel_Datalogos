@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  	<meta charset="utf-8" />
+  	<title>Datalogos</title>
+  	<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+  	<link rel="icon" href="/assets/images/favicon.png" type="image/png">
+  	<!-- BEGIN PAGE LEVEL STYLES -->
+  	<link href="/assets/plugins/vector-map/jquery-jvectormap-2.0.2.css" rel="stylesheet"> 
+    <link href="/assets/plugins/metis-menu/metisMenu.min.css" rel="stylesheet" type="text/css" />
+  	<link href="/assets/plugins/morris-chart/morris.css" rel="stylesheet" type="text/css" />
+  	<!-- END PAGE LEVEL STYLES -->
+  	<link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+  	<link href="/assets/css/icons.css" rel="stylesheet">
+  	<link href="/assets/css/style.css" rel="stylesheet" type="text/css" />
+  	<link href="/assets/css/responsive.css" rel="stylesheet" type="text/css" />
+  	<link href="/assets/css/links-web.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body class="fixed-top">
+  	<!--Imagem de Carregamento -->
+  	<div id="pageloader">   
+        <div class="loader">
+        </div>
+    </div>
+  	<link rel="import" href="header.html">
+  	<div class="wrapper">
+    	<div class="content-main container">
+      		<!--Titulo da Pagina-->
+      		<div class="page-title-box">
+        		<h4 class="page-title" id="page_title"><i class="fi fi-rr-browser"></i><b> Ambientes Web</b></h4>
+        		<div class="clearfix"></div>
+      		</div>          
+      		<div class="row"> 
+        		<div class="col-lg-3"> 
+            		<div class="panel-group" id="accordion">
+            		    <div class="panel panel-default" id="painel-unico">
+            		        <div class="panel-heading">
+            		            <div class="button-wrap">
+            		            	<!--Links Ambiente Web-->
+            		            	<p id="title"><b>Ambientes Web</b></p>
+            		            	<br>
+            		            	<p id="text">Para acesso será preciso de login e senha, para cada usuario é um acesso diferente. Caso não conseguir acesso em algum ambiente abrir chamado solicitando.
+                        			<br><b>Login:</b> E-mail do Help Desk <br><b>Senha:</b> Senha do Help Desk (Letras são maiusculas)</p>
+                      			</div>
+                    		</div>
+                		</div>
+            		</div>
+        		</div>
+        		<center>
+        		    <div class="col-md-3" class="btn btn-light"   >
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a href="https://contas.teorema.inf.br/painel" role="button" aria-pressed="true" target="blank" download id="image">
+        		                    <img src="/assets/images/teo-sistemas.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a href="https://counter.teorema.inf.br/login" role="button" aria-pressed="true" target="_blank" download id="image">
+        		                    <img src="/assets/images/teo-counter.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a href="https://contas.teorema.inf.br/login?key=manager-bridgeweb" role="button" aria-pressed="true" target="_blank" download id="image" >
+        		                    <img src="/assets/images/teo-servidores.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a href="https://quotes-panel.web.app/auth" role="button" aria-pressed="true" target="_blank" download id="image" >
+        		                    <img src="/assets/images/cotacoes.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a href="https://painelmm.teorema.inf.br/#/login" role="button" aria-pressed="true" target="_blank" download id="image" >
+        		                    <img src="/assets/images/teo-mm.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a  href="https://contas.teorema.inf.br/login?key=praxis" role="button" aria-pressed="true" target="_blank" download id="image">
+        		                    <img src="/assets/images/teo-praxis.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a href="https://vendor.teorema.inf.br/#/login" role="button" aria-pressed="true" target="_blank" download id="image">
+        		                    <img src="/assets/images/teo-vendor.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a href="https://contas.teorema.inf.br/login?key=wms" role="button" aria-pressed="true" target="_blank" download id="image">
+        		                    <img src="/assets/images/teo-wms.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div> 
+        		    <div class="col-md-3" class="btn btn-light">
+        		        <div class="dash-tiles2" id="panel">
+        		            <div class="dash-tiles-inner">
+        		                <a id="image">
+        		                    <img src="/assets/images/logo-teorema.png">
+        		                </a>
+        		            </div>
+        		        </div>
+        		    </div>
+        		</center>
+        		<div class="col-lg-3" id="painel-agrupado"> 
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" id="painel-agrupado">
+                            <div class="panel-heading">
+                                <div class="button-wrap">
+                                    <!--Links Ambiente Web-->
+                                    <p id="title"><b>Cadastro Praxis</b></p>
+                                    <br>
+                                    <p id="text">  Painel onde é feito o cadastro do cliente praxis, para que possa ser acessado pelo agente via login e senha do mesmo, sem ser necessário pedir os dados do cliente futuramente para correções/documentações.<br>  Os dados solicitados será o do cliente, então será importante no momento de cadastrar fazer junto do cliente, e solicitar que ele confirme via e-mail a solicitação.</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3" id="painel-agrupado"> 
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" id="painel-agrupado">
+                            <div class="panel-heading">
+                                <div class="button-wrap">
+                                    <!--Links Ambiente Web-->
+                                    <p id="title"><b>Auditor Multibase</b></p>
+                                    <br>
+                                    <p id="text">Para acesso será preciso de login, senha e o aliás da empresa. Segue exemplo de login com a nossa base Auditor
+                                    <br><b>Login:</b> Teorema <br><b>Senha:</b> 1811<br><b>Aliás:</b> Datalogos</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"> 
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" id="painel-agrupado">
+                            <div class="panel-heading">
+                                <div class="button-wrap">
+                                    <!--Links Ambiente Web-->
+                                    <p id="title"><b>Acesso ao Repbackup</b></p>
+                                    <br>
+                                    <p id="text">Ambiente onde é possivel gerar backups de alguns clientes, principalmente os que são do ambiente Alliant. Para acesso ao RepBackup precisará do seguinte acesso:<br><b>Login:</b> Suporte@datalogos.inf.br <br><b>Senha:</b> Teorema@4030</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3"> 
+                    <div class="panel-group" id="accordion">
+                        <div class="panel panel-default" id="painel-agrupado">
+                            <div class="panel-heading">
+                                <div class="button-wrap">
+                                    <!--Links Ambiente Web-->
+                                    <p id="title"><b>Painel de Clientes</b></p>
+                                    <br>
+                                    <p id="text">Painel de Dropshipping utilizado pela Spinner. Está em processo de implantação.<br><b>Login:</b> agentes@teorema.inf.br<br><b>Senha:</b> REPTEC0606</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <center>
+                    <div class="col-md-3" class="btn btn-light" id="button-group">
+                        <div class="dash-tiles2" id="panel" >
+                            <div class="dash-tiles-inner" >
+                                <div> <i></i> </div>
+                                <a href="https://praxis.teorema.inf.br/#/cadastro-usuario" role="button" aria-pressed="true" target="_blank" download id="image">
+                  				    <img src="/assets/images/teo-praxis-cad.png">
+                  				  </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" class="btn btn-light">
+                        <div class="dash-tiles2" id="panel" >
+                            <div class="dash-tiles-inner" >
+                                <div> <i></i> </div>
+                                <a href="https://datalogos-auditor.teorema.inf.br/teorema-auditor2/#/login" role="button" aria-pressed="true" target="blank" download id="image">
+                                    <img src="/assets/images/auditor.png" >
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3" class="btn btn-light">
+                        <div class="dash-tiles2" id="panel" >
+                            <div class="dash-tiles-inner" >
+                                <div> <i></i> </div>
+                                <a href="https://reptec.backupmanager.info/" role="button" aria-pressed="true" target="_blank" download id="image">
+                  				    <img src="/assets/images/repbkp.png">
+                  				  </a>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3" class="btn btn-light">
+                        <div class="dash-tiles2" id="panel" >
+                            <div class="dash-tiles-inner" >
+                                <div> <i></i> </div>
+                                <a href="https://teorema-customers-panel.web.app/auth" role="button" aria-pressed="true" target="_blank" download id="image">
+                  				    <img src="/assets/images/Painel-de-Clientes.png">
+                  				  </a>
+                            </div>
+                        </div>
+                    </div> 
+                </center>
+        	</div>    
+      	</div>
+    </div>
+	<!--Start  Footer -->
+	<footer class="footer-main"> 2023 &copy; Datalogos </footer>   
+	<!--End footer -->
+	<!--JS-->
+	<script type="text/javascript" src="/assets/js/jquery.min.js"></script>
+	<script type="text/javascript" src="/assets/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="/assets/js/jquery.slimscroll.js"></script>
+	<script type="text/javascript" src="/assets/js/custom.js"></script>
+	<script type="text/javascript" src="/assets/js/jtablealliant.js"></script>
+	
+	<!--Plugins-->
+	<script type="text/javascript" src="/assets/plugins/morris-chart/raphael-min.js"></script>
+	<script type="text/javascript" src="/assets/plugins/morris-chart/morris.js"></script>
+	<script type="text/javascript" src="/assets/plugins/jquery-sparkline/jquery.charts-sparkline.js"></script>
+	<script type="text/javascript" src="/assets/plugins/sparkline-chart/jquery.charts-sparkline.html"></script>
+	<script type="text/javascript" src="/assets/plugins/chart-js/Chart.js"></script>
+	<script type="text/javascript" src="/assets/plugins/metis-menu/metisMenu.min.js"></script>
+	<!--Pages-->
+	<script type="text/javascript" src="/assets/pages/dashboard4.js"></script>
+
+</body>
+
+<!-- Mirrored from mixpixeltheme.com/mercy/table-responsive.html by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 24 Dec 2021 14:06:05 GMT -->
+</html>

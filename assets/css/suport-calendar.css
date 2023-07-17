@@ -1,0 +1,41 @@
+ #title{
+  font-size: 20px;
+  margin-left: 10px;
+ }
+ #text{
+  margin-left: 10px;
+  font-size: 20px;
+  font-family:'Consolas';
+ }
+ #page_title{
+  font-size: 40px;
+  position: relative;
+  left: 450px;
+ }
+ .loader {
+  animation: is-rotating 1s infinite;
+  border: 20px solid #e5e5e5;
+  border-radius: 100%;
+  border-top-color: #FF3B2A;
+  height: 150px;
+  width: 150px;
+  margin-top: -100px;
+  margin-left: -50px;
+  margin-right: 100px;
+  margin-bottom:100px;
+}
+.tab-content{
+  width: 100%;
+  height: 100%;
+ }
+.aba{
+  width: 150px;
+  height: 70px;
+  text-align: center;
+  background-color: #DCDCDC;
+ }
+@keyframes is-rotating {
+  to {
+    transform: rotate(1turn);
+  }
+}
